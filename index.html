@@ -233,6 +233,7 @@
   }
   .rank-select:hover,.rank-select:focus{border-color:var(--yellow);}
   .rank-select option{background:var(--panel);color:var(--ink);}
+  .rank-select-note{margin-top:8px;font-size:.72rem;line-height:1.4;color:var(--ink-dim);}
   .service-price.bump{animation:priceBump .35s ease;}
   @keyframes priceBump{0%{transform:scale(1);}40%{transform:scale(1.18);color:var(--yellow);}100%{transform:scale(1);}}
 
@@ -358,25 +359,24 @@
         <div class="service-icon">R</div>
         <h3>Ranked Push</h3>
         <ul class="service-features">
-          <li>Every tier, Bronze to Masters</li>
+          <li>Diamond to Masters</li>
           <li>Solo, duo or trio account</li>
           <li>Safe, direct process</li>
         </ul>
         <div class="rank-select-wrap">
           <label for="rankSelect" class="rank-select-label">Pick your tier jump</label>
           <select id="rankSelect" class="rank-select">
-            <option data-price="5">Bronze → Silver</option>
-            <option data-price="5">Silver → Gold</option>
-            <option data-price="6">Gold → Diamond</option>
             <option data-price="7">Diamond → Mythic</option>
             <option data-price="9">Mythic → Legendary</option>
             <option data-price="13">Legendary → Masters</option>
+            <option data-price="0" disabled style="color:#37e07d;">Bronze → Diamond - in tickets</option>
           </select>
+          <p class="rank-select-note">Only Diamond and up can be boosted. Full per-tier pricing confirmed in Discord.</p>
         </div>
       </div>
       <div class="service-foot">
         <div class="service-price-label">Starting from</div>
-        <div class="service-price" id="rankPrice">$5</div>
+        <div class="service-price" id="rankPrice">$7</div>
         <a href="https://discord.gg/DZqvrgVymQ" target="_blank" rel="noopener noreferrer" class="service-cta">Order</a>
       </div>
     </div>
